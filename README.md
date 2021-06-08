@@ -1,3 +1,3 @@
 
 
-This does cost-sensitive recommendation
+This does cost-sensitive recommendation, in the context of article-recommendation.
