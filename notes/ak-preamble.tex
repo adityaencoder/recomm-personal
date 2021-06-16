@@ -1,0 +1,93 @@
+%%
+
+\definecolor{akcolor_red}{rgb}{0.7, 0.11, 0.11}
+\definecolor{akcolor_white}{rgb}{1.0, 1.0, 1.0}
+\definecolor{akcolor_green}{rgb}{0.13, 0.55, 0.13}
+\newcommand{\redak}[1]{{\color{akcolor_red} #1} }
+\newcommand{\whiteak}[1]{{\color{akcolor_white} #1} }
+\newcommand{\greenak}[1]{{\color{akcolor_green} #1} }
+\newcommand{\blueak}[1]{{\color{blue} #1} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ba{\ensuremath{{\bf a}}} \def\bA{\ensuremath{{\bf A}}}
+\def\bb{\ensuremath{{\bf b}}} \def\bB{\ensuremath{{\bf B}}}
+\def\bc{\ensuremath{{\bf c}}} \def\bA{\ensuremath{{\bf C}}}
+\def\bd{\ensuremath{{\bf d}}}\def\bD{\ensuremath{{\bf D}}}
+\def\be{\ensuremath{{\bf e}}}\def\bE{\ensuremath{{\bf E}}}
+\def\bF{\ensuremath{{\bf F}}}
+\def\bg{\ensuremath{{\bf g}}}\def\bG{\ensuremath{{\bf G}}}
+\def\bh{\ensuremath{{\bf h}}}\def\bH{\ensuremath{{\bf H}}}
+\def\bi{\ensuremath{{\bf i}}}\def\bI{\ensuremath{{\bf I}}}
+\def\bj{\ensuremath{{\bf j}}}\def\bJ{\ensuremath{{\bf J}}}
+\def\bk{\ensuremath{{\bf k}}}\def\bK{\ensuremath{{\bf K}}}
+\def\bl{\ensuremath{{\bf l}}}\def\bL{\ensuremath{{\bf L}}}
+\def\bm{\ensuremath{{\bf m}}}\def\bM{\ensuremath{{\bf M}}}
+\def\bn{\ensuremath{{\bf n}}}\def\bN{\ensuremath{{\bf N}}}
+\def\bo{\ensuremath{{\bf o}}}\def\bO{\ensuremath{{\bf P}}}
+\def\bp{\ensuremath{{\bf p}}}\def\bP{\ensuremath{{\bf P}}}
+\def\bq{\ensuremath{{\bf q}}}\def\bQ{\ensuremath{{\bf Q}}}
+\def\br{\ensuremath{{\bf r}}}\def\bR{\ensuremath{{\bf R}}}
+\def\bs{\ensuremath{{\bf s}}}\def\bS{\ensuremath{{\bf S}}}
+\def\bt{\ensuremath{{\bf t}}}\def\bT{\ensuremath{{\bf T}}}
+\def\bu{\ensuremath{{\bf u}}}\def\bU{\ensuremath{{\bf U}}}
+\def\bv{\ensuremath{{\bf v}}}\def\bV{\ensuremath{{\bf V}}}
+\def\bw{\ensuremath{{\bf w}}}\def\bW{\ensuremath{{\bf W}}}
+\def\bx{\ensuremath{{\bf x}}}\def\bX{\ensuremath{{\bf X}}}
+\def\by{\ensuremath{{\bf y}}}\def\bY{\ensuremath{{\bf Y}}}
+\def\bz{\ensuremath{{\bf z}}}\def\bZ{\ensuremath{{\bf Z}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+
+\newcommand{\sdhd}[1]{\raggedright{\textbf{#1}} \setlength\parindent{2em}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\parfrac}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\imcenter}[3]{
+\begin{figure}[H]
+\begin{center}
+\includegraphics[#1]{#2}
+\end{center}
+\caption{#3}
+\end{figure} }
+
+\newcommand{\imcenterlabel}[4]{
+\begin{figure}[H]
+\begin{center}
+\includegraphics[#1]{#2}
+\end{center}
+\caption{#3}
+\label{#4}
+\end{figure} }
+
+
+\newcommand{\eqnsrightflower}[1]{
+\begin{equation}
+\left.
+\begin{array}{lcl}
+#1
+\end{array}
+\right\}
+\end{equation}
+}
+
+\newcommand{\mincon}[2]{
+\begin{equation}
+\begin{aligned}\
+& \underset{ #2}{\text{Minimize}}
+& &   {#1} \\
+\end{aligned}
+\end{equation}
+}
+
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+
+
+\newcommand{\kp}{\redak{K_p} }
+\newcommand{\ki}{\greenak{K_i} }
+\newcommand{\kd}{\blueak{K_d} }
+
