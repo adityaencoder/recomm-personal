@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.28)  16 JUN 2021 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.28)  16 JUN 2021 13:27
 entering extended mode
 **./value_based_recomm.tex
 (value_based_recomm.tex
@@ -812,7 +812,7 @@ Package rerunfilecheck Info: File `value_based_recomm.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  17477 strings out of 482170
- 343889 string characters out of 2929757
+ 344043 string characters out of 2929757
  612814 words of memory out of 3000000
  33433 multiletter control sequences out of 15000+200000
  544870 words of font info for 67 fonts, out of 3000000 for 9000
@@ -846,7 +846,7 @@ ts/type1/public/amsfonts/cm/cmsy9.pfb></Users/adkiran/Library/Application Suppo
 rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/adki
 ran/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on value_based_recomm.pdf (4 pages, 274990 bytes).
+Output written on value_based_recomm.pdf (4 pages, 275052 bytes).
 PDF statistics:
  153 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
