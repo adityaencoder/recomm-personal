@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.28)  29 JUL 2021 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.28)  29 JUL 2021 16:46
 entering extended mode
-**./value_based_recomm.tex
-(value_based_recomm.tex
+**./value_based_b4_realistic.tex
+(value_based_b4_realistic.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-05> xparse <2020-03-03>
 ("/Users/adkiran/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ba
@@ -739,8 +739,8 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [11].
 
-(value_based_recomm.aux)
-\openout1 = `value_based_recomm.aux'.
+(value_based_b4_realistic.aux)
+\openout1 = `value_based_b4_realistic.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -777,10 +777,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
- (value_based_recomm.out)
-(value_based_recomm.out)
+ (value_based_b4_realistic.out)
+(value_based_b4_realistic.out)
 \@outlinefile=\write6
-\openout6 = `value_based_recomm.out'.
+\openout6 = `value_based_b4_realistic.out'.
 
  ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 29.
@@ -861,67 +861,73 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/Users/adkiran/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pd
 ftex.map}] [2]
-<images/example2.png, id=64, 1812.7725pt x 804.00375pt>
-File: images/example2.png Graphic file (type png)
-<use images/example2.png>
-Package pdftex.def Info: images/example2.png  used on input line 126.
-(pdftex.def)             Requested size: 426.39256pt x 189.11266pt.
-<images/value_abs_recomm.png, id=66, 523.9575pt x 397.485pt>
+<images/value_abs_recomm.png, id=64, 523.9575pt x 397.485pt>
 File: images/value_abs_recomm.png Graphic file (type png)
 <use images/value_abs_recomm.png>
-Package pdftex.def Info: images/value_abs_recomm.png  used on input line 133.
+Package pdftex.def Info: images/value_abs_recomm.png  used on input line 128.
 (pdftex.def)             Requested size: 211.06406pt x 160.11322pt.
 
-Overfull \hbox (19.1887pt too wide) in paragraph at lines 133--134
+Overfull \hbox (19.1887pt too wide) in paragraph at lines 128--129
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []\OT1/cmr/m/n/9 (a) |Mean of unweighted-values in the
  []
 
-<images/value_weight_recomm.png, id=67, 523.9575pt x 412.54124pt>
+<images/value_weight_recomm.png, id=66, 523.9575pt x 412.54124pt>
 File: images/value_weight_recomm.png Graphic file (type png)
 <use images/value_weight_recomm.png>
-Package pdftex.def Info: images/value_weight_recomm.png  used on input line 139
+Package pdftex.def Info: images/value_weight_recomm.png  used on input line 134
 .
 (pdftex.def)             Requested size: 211.06406pt x 166.17812pt.
 
-Overfull \hbox (19.1887pt too wide) in paragraph at lines 139--140
+Overfull \hbox (19.1887pt too wide) in paragraph at lines 134--135
  [][] 
  []
 
-<images/cossim_recomm.png, id=68, 507.8975pt x 397.485pt>
+<images/cossim_recomm.png, id=67, 507.8975pt x 397.485pt>
 File: images/cossim_recomm.png Graphic file (type png)
 <use images/cossim_recomm.png>
-Package pdftex.def Info: images/cossim_recomm.png  used on input line 144.
+Package pdftex.def Info: images/cossim_recomm.png  used on input line 139.
 (pdftex.def)             Requested size: 208.9347pt x 163.51576pt.
-[3 <./images/example2.png>]
-<images/distrib_lifts.png, id=75, 741.77126pt x 500.87125pt>
-File: images/distrib_lifts.png Graphic file (type png)
-<use images/distrib_lifts.png>
-Package pdftex.def Info: images/distrib_lifts.png  used on input line 152.
-(pdftex.def)             Requested size: 445.0662pt x 300.52505pt.
+<images/example.png, id=68, 625.33624pt x 315.1775pt>
+File: images/example.png Graphic file (type png)
+<use images/example.png>
+Package pdftex.def Info: images/example.png  used on input line 146.
+(pdftex.def)             Requested size: 469.03441pt x 236.40659pt.
 
-Overfull \hbox (18.67363pt too wide) in paragraph at lines 152--152
+Overfull \hbox (42.64185pt too wide) in paragraph at lines 146--146
  [] 
  []
 
-[4 <./images/value_abs_recomm.png> <./images/value_weight_recomm.png> <./images
-/cossim_recomm.png>] [5 <./images/distrib_lifts.png>] [6]
-(value_based_recomm.aux)
-Package rerunfilecheck Info: File `value_based_recomm.out' has not changed.
+[3 <./images/value_abs_recomm.png> <./images/value_weight_recomm.png> <./images
+/cossim_recomm.png>]
+<images/distrib_lifts.png, id=80, 741.77126pt x 500.87125pt>
+File: images/distrib_lifts.png Graphic file (type png)
+<use images/distrib_lifts.png>
+Package pdftex.def Info: images/distrib_lifts.png  used on input line 148.
+(pdftex.def)             Requested size: 445.0662pt x 300.52505pt.
+
+Overfull \hbox (18.67363pt too wide) in paragraph at lines 148--148
+ [] 
+ []
+
+[4 <./images/example.png>] [5 <./images/distrib_lifts.png>] [6]
+(value_based_b4_realistic.aux)
+Package rerunfilecheck Info: File `value_based_b4_realistic.out' has not change
+d.
 (rerunfilecheck)             Checksum: 5DB54036B76BDC65B3C567F1CF1CE4AF;277.
  ) 
 Here is how much of TeX's memory you used:
  17953 strings out of 482170
- 351404 string characters out of 2929757
- 626382 words of memory out of 3000000
+ 351613 string characters out of 2929757
+ 626406 words of memory out of 3000000
  33893 multiletter control sequences out of 15000+200000
  544870 words of font info for 67 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 107i,10n,111p,476b,532s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 107i,10n,111p,482b,532s stack positions out of 5000i,500n,10000p,200000b,50000s
  </Users/adkiran/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfo
 ur/jknappen/ec/dpi600/tcrm1000.pk></Users/adkiran/Library/Application Support/M
 iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/adkiran/
@@ -950,7 +956,7 @@ ts/type1/public/amsfonts/cm/cmsy9.pfb></Users/adkiran/Library/Application Suppo
 rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/adki
 ran/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on value_based_recomm.pdf (6 pages, 567603 bytes).
+Output written on value_based_b4_realistic.pdf (6 pages, 298009 bytes).
 PDF statistics:
  173 PDF objects out of 1000 (max. 8388607)
  28 named destinations out of 1000 (max. 500000)
