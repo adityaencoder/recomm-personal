@@ -47,7 +47,10 @@ Let $(V^2, E^2)$ be the similarity graph. As above, $d^2_{ij}$'s be the distance
 
 \item \textbf{$c_i$ is the value associated with that article}
 \end{enumerate}
-So, each article $A_i$ is represented by this triad $\{ v^1_i, v^2_i, c_i \}$. Although, this is a very general formulation. For the sake of simplicity, for now we will just assume that each the article is characterized by its sentence embedding and its value.
+So, each article $A_i$ is represented by this triad $\{ v^1_i, v^2_i, c_i \}$. Although, this is a very general formulation. For the sake of simplicity, for now we will just assume that each  article is characterized by its sentence embedding and its value.
+
+In this work, we will use Healthline content recommendation as a setting usecase to demonstrate our idea.
+
 \vspace{0.3cm}
 
 \redak{\sdhd{Problem Statement:}}\\
@@ -74,7 +77,7 @@ Each article $A_J$ is attributed with its sentence-embedding and its value. So w
 \item $\phi$ must be inversely proportional to the  distance of the article $A_J$ from the current article $A_i$ \[ \phi(A_i, A_{J})  \propto \frac{1}{|d_i-d_J|} =\frac{1}{d_{iJ}} \]
 \end{itemize}
 
-Hence, we choose $$\phi(A_p, A_{q}):=\dfrac{(c_{q})^{r_1}}{(d_{pq})^{r_2}}.$$ Here $r_1$ and $r_2$ are the parameters that control the contribution of the value and the distance, on the utility term $\phi$ respectively. \\Note: The special case of $\{r_1=0, r_2=1 \}$ reduces the method back to the BAU.
+Hence, we choose $$\phi(A_p, A_{q}):=\dfrac{(c_{q})^{r_1}}{(d_{pq})^{r_2}}.$$ Here $r_1$ and $r_2$ are the parameters that control the contribution of the value and the distance, on the utility term $\phi$ respectively. \\Note: The special case of $\{r_1=0, r_2=1 \}$ reduces the method back to the BAU. So once implemented, this method is easily backward compatible.
 \vspace{0.3cm}
 
 \sdhd{\redak{Assumptions made:}}
@@ -108,13 +111,13 @@ We use the discounted-value instead of actual value to account for the fact that
 
 \section{Results}
 
-\sdhd{\redak{Simulation results for infinite scroll:}}\\
+\sdhd{\redak{Simulation results for \textit{Infinite scroll}:}}\\
 We used $r_1=0.8, r_2=15, \gamma=0.09, N=6,$ and ran 30,000 random simulations.
 \begin{itemize}
 \item We observe a {\textbf{lift of 14.76\% in the discounted value}}
 \[ \left( \dfrac{  \mathcal{V}^{VAL}_{disc}-\mathcal{V}^{BAU}_{disc}  }{\mathcal{V}^{BAU}_{disc} } \right) \times 100  =14.76\% \]
-
-\item We observe a {\textbf{reduction in relevance of 0.4\%}}
+This lift can be interpreted as the revenue lift seen per impression on an average.
+\item We observe a {\textbf{reduction in relevance or similarity  of 0.4\%}}
 
 I.e., Mean cosine-similarity between the recommended articles and the article being read:
 \begin{itemize}
