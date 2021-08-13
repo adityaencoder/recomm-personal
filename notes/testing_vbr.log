@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.28)  11 AUG 2021 21:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.28)  12 AUG 2021 22:05
 entering extended mode
 **./testing_vbr.tex
 (testing_vbr.tex
@@ -860,39 +860,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Warning: No \author given.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
 [1
 
 
 {/Users/adkiran/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pd
-ftex.map}] (testing_vbr.aux)
+ftex.map}] [2] [3] (testing_vbr.aux)
 Package rerunfilecheck Info: File `testing_vbr.out' has not changed.
-(rerunfilecheck)             Checksum: EC3DF5DDAD7D4B0A3D4B432EAA744FE8;47.
+(rerunfilecheck)             Checksum: E71715972D4A1C2FCA010C980745D46A;301.
  ) 
 Here is how much of TeX's memory you used:
- 17861 strings out of 482170
- 349780 string characters out of 2929757
- 623812 words of memory out of 3000000
- 33833 multiletter control sequences out of 15000+200000
- 542990 words of font info for 60 fonts, out of 3000000 for 9000
+ 17880 strings out of 482170
+ 349974 string characters out of 2929757
+ 628816 words of memory out of 3000000
+ 33840 multiletter control sequences out of 15000+200000
+ 543632 words of font info for 62 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 107i,8n,111p,469b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
-</Users/adkiran/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb></Users/adkiran/Library/Application Support/MiKT
-eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/adkiran/Lib
-rary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></Users/adkiran/Library/Application Support/MiKTeX/texmfs/install/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></Users/adkiran/Library/Application Suppo
-rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/adkir
-an/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></Users/adkiran/Library/Application Support/MiKTeX/texmfs/instal
-l/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/adkiran/Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/a
-dkiran/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></Users/adkiran/Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on testing_vbr.pdf (1 page, 112550 bytes).
+ 107i,8n,111p,469b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </Users/adkiran/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfo
+ur/jknappen/ec/dpi600/tcrm1000.pk></Users/adkiran/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/adkiran/
+Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></Users/adkiran/Library/Application Support/MiKTeX/texmfs/install/
+fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/adkiran/Library/Application S
+upport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></Us
+ers/adkiran/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></Users/adkiran/Library/Application Support/MiKTeX/tex
+mfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Users/adkiran/Library/Ap
+plication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></Users/adkiran/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></Users/adkiran/Library/Application Support/MiKTe
+X/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/adkiran/Libra
+ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
+17.pfb></Users/adkiran/Library/Application Support/MiKTeX/texmfs/install/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></Users/adkiran/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/adkiran/
+Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmti10.pfb>
+Output written on testing_vbr.pdf (3 pages, 154279 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -31,22 +31,6 @@
 
 
 \section{Formulation}
-For each article $A_i$ in our database we know its 3 properties:
-\begin{enumerate}
-
-\item \textbf{$v^1_i$ is a vector of its graph-representation}:
-
-Let $(V^1, E^1)$ be the coviewership graph. Here $V^1$ represents the set of graph-embeddings of all nodes (articles) $v^1$, and $E^1$ represents set of all edges connecting those nodes.  $d^1_{ij}$'s be the distance between $v^1_i$ and $v^1_j$. 
- 
-\item \textbf{$v^2_i$ is a vector of its sentence embedding}:
-
-Let $(V^2, E^2)$ be the similarity graph. As above, $d^2_{ij}$'s be the distance between $v^2_i$ and $v^2_j$.
-
-\item \textbf{$c_i$ is the value associated with that article}
-\end{enumerate}
-So, each article $A_i$ is represented by this triad $\{ v^1_i, v^2_i, c_i \}$. Although, this is a very general formulation. For the sake of simplicity, for now we will just assume that each  article is characterized by its sentence embedding and its value.
-
-In this work, we will use Healthline content recommendation as a setting usecase to demonstrate our idea.
 
 \vspace{0.3cm}
 
@@ -64,6 +48,69 @@ Mathematically, given $A_i$, we seek $A_j$ such that:
 \end{align*}
 where $\phi$ is the utility function. This above formulation is mainly for our \textit{Read Next} pages, but it could be easily extended to \textit{Infinite scroll}.
 
+\section{Testing}
+
+\redak{\sdhd{What questions do we intend to answer via the  test}}\\
+\begin{enumerate}
+\item How much monetary lift do we observe? 
+\item How is the AQ degrading?
+\end{enumerate}
+
+
+
+\textbf{Some notation:}
+\begin{itemize}
+\item \textit{val} is the test-side and \textit{bau} is the control side
+\item Let $\{ A_1, A_2, \cdots A_N \}$ be the $N$ articles that were served as a part of showing 3 recommendation for each of the 500 test head-articles.
+\item Let $R_i^{val}$ and $R_i^{bau}$ be the total revenue obtained on the $A_i^{th}$ article throughout the testing period.
+\item Let $I_i^{val}$ and $I_i^{bau}$ be the total impressions obtained on the $A_i^{th}$ article throughout the testing period.
+\item Let $V_i^{val}$ and $V_i^{bau}$ be the total page-views observed on the $A_i^{th}$ article throughout the testing period.
+\item Let $S_i^{val}$ and $S_i^{bau}$ be the total sessions on the $A_i^{th}$ article throughout the testing period.
+\end{itemize}
+
+
+\subsection{Lift in the monetary value}
+So the metrics that we are interested in this regard:
+\begin{enumerate}
+
+\item Percentage lift in the `value ' or the revenue per impression:
+
+\begin{enumerate}
+\item Lift in the `value' evaluated over all the $N$ articles:
+\[    \dfrac{\left(  \frac{\sum_i R_i^{val}}{\sum_i I_i^{val}} - \frac{\sum_i R_i^{bau}}{\sum_i I_i^{bau}} \right)}{ \left( \frac{\sum_i R_i^{bau}}{\sum_i I_i^{bau}} \right) } \times 100   \]
+\item Mean of the lifts observed across each of the $N$ articles:
+\[     \frac{1}{N} \sum_i   \dfrac{  \left(  \frac{R^{val}_i}{I^{val}_i}  - \frac{R^{bau}_i}{I^{bau}_i}  \right)  }{\left( \frac{R^{bau}_i}{I^{bau}_i} \right)}      \]
+This is more sensitive if we are dealing with high-rev pages but with few impressions
+\end{enumerate}
+
+
+
+\item Percentage lift in the revenue 
+\[    \dfrac{\left( \sum_i R_i^{val}- \sum_i R_i^{bau} \right)}{\sum_i R_i^{bau}} \times 100   \]
+Although, this wouldn't make much sense if the no. of impressions is widely different in bau and val.
+\end{enumerate}
+
+\subsection{Degradation in the audience quality}
+Currently the AQ metrics that the business has in mind are off-limits for us, as they are only measured through an aggregate of full month of a specific program. So we need to look at some other pseudo-metrics that measure AQ.
+
+So we intend to look at user engagement via PVPS.
+
+\begin{enumerate}
+
+\item  Reduction in the PVPS:
+\[  -  \dfrac{\left(  \frac{\sum_i V_i^{val}}{\sum_i S_i^{val}} - \frac{\sum_i V_i^{bau}}{\sum_i S_i^{bau}} \right)}{ \left( \frac{\sum_i V_i^{bau}}{\sum_i S_i^{bau}} \right) } \times 100   \]
+\item We could do similar comparisions using other metrics too such as 
+
+\begin{itemize}
+\item ASD
+\item bounce-rate
+\item IAB ad CTR
+\end{itemize}
+
+\end{enumerate}
+
+\section{Conclusion}
+Finally we want to test our hypothesis that serving high-value pages (obtained by optimizing our utility function $\phi$ over all the available articles) is not detrimental to the AQ or the user-engagement.
 
 
 
